@@ -124,7 +124,7 @@ void convert_s16_to_float_altivec(float *out,
 
 #elif defined(__ARM_NEON__) && !defined(VITA)
 /* Avoid potential hard-float/soft-float ABI issues. */
-void convert_s16_float_asm(float *out, const int16_t *in,
+extern void convert_s16_float_asm(float *out, const int16_t *in,
       size_t samples, const float *gain);
 
 /**

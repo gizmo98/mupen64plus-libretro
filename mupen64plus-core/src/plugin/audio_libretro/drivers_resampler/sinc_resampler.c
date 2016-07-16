@@ -348,7 +348,7 @@ static void (*process_sinc_func)(rarch_sinc_resampler_t *resamp,
       float *out_buffer);
 
 /* Assumes that taps >= 8, and that taps is a multiple of 8. */
-void process_sinc_neon_asm(float *out, const float *left, 
+extern void process_sinc_neon_asm(float *out, const float *left, 
       const float *right, const float *coeff, unsigned taps);
 
 static void process_sinc_neon(rarch_sinc_resampler_t *resamp,

@@ -135,7 +135,7 @@ void convert_float_s16_asm(int16_t *out, const float *in, size_t samples);
  *
  * ARM NEON implementation callback function.
  **/
-static void convert_float_to_s16_neon(int16_t *out,
+extern static void convert_float_to_s16_neon(int16_t *out,
       const float *in, size_t samples)
 {
    size_t aligned_samples = samples & ~7;

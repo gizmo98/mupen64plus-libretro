@@ -389,9 +389,9 @@ static void resampler_CC_upsample(void *re_, struct resampler_data *data)
 
 #define CC_RESAMPLER_IDENT "NEON"
 
-size_t resampler_CC_downsample_neon(float *outp, const float *inp,
+extern size_t resampler_CC_downsample_neon(float *outp, const float *inp,
       rarch_CC_resampler_t* re_, size_t input_frames, float ratio);
-size_t resampler_CC_upsample_neon  (float *outp, const float *inp,
+extern size_t resampler_CC_upsample_neon  (float *outp, const float *inp,
       rarch_CC_resampler_t* re_, size_t input_frames, float ratio);
 
 static void resampler_CC_downsample(void *re_, struct resampler_data *data)
